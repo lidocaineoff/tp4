@@ -12,3 +12,4 @@ git clone
 git pull
 git fetch
 git branch -a 
+git checkout <branch1>
