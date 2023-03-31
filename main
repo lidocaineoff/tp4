@@ -1,0 +1,15 @@
+mkdir proj-repo
+cd proj-repo
+echo "# proj-repo" >> README.md
+Initialized empty Git repository in /Users/User/Documents/proj-repo/.git/
+git add README.md
+git status
+git commit -m “first commit”: Committer: User <email@.local>
+git log
+git branch -M main
+git remote add origin https:// github.com/lidocaineoff/proj-repo.git
+git push -u origin main 
+git clone
+git pull
+git fetch
+git branch -a 
