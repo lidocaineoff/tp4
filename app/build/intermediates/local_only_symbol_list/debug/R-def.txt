@@ -1,0 +1,35 @@
+R_DEF: Internal format may change without notice
+local
+color background
+color black
+color button
+color purple_200
+color purple_500
+color purple_700
+color slash
+color teal_200
+color teal_700
+color white
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+drawable logo
+id button
+id button2
+id editTextTextPersonName
+id logo
+id textView
+id textView2
+layout activity_avtorizacia2
+layout activity_home4
+layout activity_new_shablon5
+layout activity_registracia3
+layout activity_splash1
+layout activity_timer6
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+string new_shablon
+string sozdat
+style Theme.TimeLime
+xml backup_rules
+xml data_extraction_rules
