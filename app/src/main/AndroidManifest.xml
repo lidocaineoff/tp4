@@ -12,6 +12,24 @@
         android:theme="@style/Theme.TimeLime"
         tools:targetApi="31">
         <activity
+            android:name=".Timer_6"
+            android:exported="false" />
+        <activity
+            android:name=".NewShablon_5"
+            android:exported="false" />
+        <activity
+            android:name=".Home_4"
+            android:exported="false" />
+        <activity
+            android:name=".Registracia_3"
+            android:exported="false" />
+        <activity
+            android:name=".Avtorizacia_2"
+            android:exported="false" />
+        <activity
+            android:name=".Splash_1"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

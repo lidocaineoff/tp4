@@ -8,4 +8,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="slash">#657F50</color>
+    <color name="button">#54AD17</color>
+    <color name="background">#5D7057</color>
 </resources>
