@@ -78,19 +78,5 @@
         android:fontFamily="@font/inter_bold"
         android:textSize="25dp" />
 
-    <TextView
-        android:id="@+id/textView"
-        style="@style/Widget.AppCompat.TextView"
-        android:layout_width="wrap_content"
-        android:layout_height="33dp"
-        android:layout_below="@+id/btn_Reset"
-        android:layout_marginTop="40dp"
-        android:layout_centerHorizontal="true"
-        android:onClick="startNewActivity"
-        android:text="@string/Завершить"
-        android:textSize="20sp"
-        android:fontFamily="@font/inter_light"
-        android:textColor="#9CCD94"/>
-
 
 </RelativeLayout>
