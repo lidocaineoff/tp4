@@ -18,8 +18,9 @@ public class MainActivity extends AppCompatActivity {
         // потом поменять в 22 строке Home_4.class на Avtorizacia_2.class
         new Handler().postDelayed(new Runnable() {
             @Override
+                    //поменяла на Timer_6
             public void run() {
-                Intent i = new Intent(MainActivity.this, Home_4.class);
+                Intent i = new Intent(MainActivity.this, Timer_6.class);
                 startActivity(i);
                 finish();
             }
