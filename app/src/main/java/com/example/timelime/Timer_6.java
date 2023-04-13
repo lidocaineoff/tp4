@@ -2,6 +2,7 @@ package com.example.timelime;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
@@ -61,19 +62,19 @@ public class Timer_6 extends AppCompatActivity {
             @Override
             public void onFinish() {
                 TimerRun =  false;
-                btn_StartStop.setText("Start");
+                btn_StartStop.setText("Запуск");
                 btn_StartStop.setVisibility(View.INVISIBLE);
                 btn_Reset.setVisibility(View.VISIBLE);
             }
         }.start();
         TimerRun = true;
-        btn_StartStop.setText("pause");
+        btn_StartStop.setText("Стоп");
         btn_Reset.setVisibility(View.INVISIBLE);
     }
     private void pauseTimer(){
         mCountTimer.cancel();
         TimerRun = false;
-        btn_StartStop.setText("Start");
+        btn_StartStop.setText("Запуск");
         btn_Reset.setVisibility(View.VISIBLE);
     };
     private void resetTimer(){
@@ -88,5 +89,10 @@ public class Timer_6 extends AppCompatActivity {
         String timerFormet = String.format(Locale.getDefault(),"%02d:%02d",min,sec);
         view_cnt.setText(timerFormet);
     };
+
+    public void startNewActivity(View v){
+        Intent intent = new Intent(this, Home_4.class);
+        startActivity(intent);
+    }
 
 }
