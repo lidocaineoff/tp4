@@ -45,4 +45,14 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+<!--    <ImageButton-->
+<!--        android:id="@+id/imageButton"-->
+<!--        android:layout_width="79dp"-->
+<!--        android:layout_height="64dp"-->
+<!--        app:srcCompat="@drawable/ic_launcher_foreground"-->
+<!--        android:contentDescription="@string/descr_overflow_button"-->
+<!--        android:onClick="showPopup"-->
+<!--        tools:layout_editor_absoluteX="333dp"-->
+<!--        tools:layout_editor_absoluteY="0dp" />-->
 </androidx.constraintlayout.widget.ConstraintLayout>
