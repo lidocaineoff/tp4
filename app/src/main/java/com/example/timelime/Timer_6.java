@@ -17,13 +17,16 @@ public class Timer_6 extends AppCompatActivity {
    // Button btn_Start;
    // TextView timer_txt;
 
-     private static final long Start_time = 600000;
-     private  TextView view_cnt;
+     private static final long Start_time = Global.startWork;
+    private static final long Start_time2 = Global.relax;
+    private  TextView view_cnt;
      private Button btn_StartStop;
     private Button btn_Reset;
     private CountDownTimer mCountTimer;
     private boolean TimerRun;
     private long mTimerleft = Start_time;
+    private long pereriv = Start_time2;
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_timer6);
@@ -51,6 +54,7 @@ public class Timer_6 extends AppCompatActivity {
         });
         updatecount();
     }
+
     private void startTimer(){
         mCountTimer = new CountDownTimer(mTimerleft, 1000) {
             @Override
@@ -65,12 +69,19 @@ public class Timer_6 extends AppCompatActivity {
                 btn_StartStop.setText("Запуск");
                 btn_StartStop.setVisibility(View.INVISIBLE);
                 btn_Reset.setVisibility(View.VISIBLE);
+
+
             }
         }.start();
+
+
+
         TimerRun = true;
         btn_StartStop.setText("Стоп");
         btn_Reset.setVisibility(View.INVISIBLE);
     }
+
+
     private void pauseTimer(){
         mCountTimer.cancel();
         TimerRun = false;
@@ -90,9 +101,37 @@ public class Timer_6 extends AppCompatActivity {
         view_cnt.setText(timerFormet);
     };
 
+    private void updatecount2(){
+        int min = (int)(pereriv/1000)/60;
+        int sec = (int)(pereriv/1000)%60;
+        String timerFormet = String.format(Locale.getDefault(),"%02d:%02d",min,sec);
+        view_cnt.setText(timerFormet);
+    };
+
     public void startNewActivity(View v){
         Intent intent = new Intent(this, Home_4.class);
         startActivity(intent);
     }
 
 }
+
+/*
+if(TimerRun == false){
+                    updatecount2();
+                    mCountTimer = new CountDownTimer(pereriv, 1000) {
+                        @Override
+                        public void onTick(long l) {
+                            pereriv= l;
+                            updatecount2();
+                        }
+
+                        @Override
+                        public void onFinish() {
+
+                            TimerRun =  false;
+                            btn_StartStop.setText("Запуск");
+                            btn_StartStop.setVisibility(View.INVISIBLE);
+                            btn_Reset.setVisibility(View.VISIBLE);
+                        }
+                    }.start();
+ */
