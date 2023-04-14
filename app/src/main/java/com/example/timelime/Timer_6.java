@@ -17,15 +17,15 @@ public class Timer_6 extends AppCompatActivity {
    // Button btn_Start;
    // TextView timer_txt;
 
-     private static final long Start_time = Global.startWork;
-    private static final long Start_time2 = Global.relax;
+    //private static final long Start_time = Global.startWork;
+    //private static final long Start_time2 = Global.relax;
     private  TextView view_cnt;
-     private Button btn_StartStop;
+    private Button btn_StartStop;
     private Button btn_Reset;
     private CountDownTimer mCountTimer;
     private boolean TimerRun;
-    private long mTimerleft = Start_time;
-    private long pereriv = Start_time2;
+    private long mTimerleft = Global.startWork; //Start_time;
+    private long pereriv = Global.relax; //Start_time2;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -89,7 +89,7 @@ public class Timer_6 extends AppCompatActivity {
         btn_Reset.setVisibility(View.VISIBLE);
     };
     private void resetTimer(){
-        mTimerleft = Start_time;
+        mTimerleft = Global.startWork;  //Start_time;
         updatecount();
         btn_Reset.setVisibility(View.INVISIBLE);
         btn_StartStop.setVisibility(View.VISIBLE);
@@ -101,14 +101,7 @@ public class Timer_6 extends AppCompatActivity {
         view_cnt.setText(timerFormet);
     };
 
-    private void updatecount2(){
-        int min = (int)(pereriv/1000)/60;
-        int sec = (int)(pereriv/1000)%60;
-        String timerFormet = String.format(Locale.getDefault(),"%02d:%02d",min,sec);
-        view_cnt.setText(timerFormet);
-    };
-
-    public void startNewActivity(View v){
+    public void zavershit(View v){
         Intent intent = new Intent(this, Home_4.class);
         startActivity(intent);
     }

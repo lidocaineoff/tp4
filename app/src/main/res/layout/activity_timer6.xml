@@ -87,7 +87,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
         android:fontFamily="@font/inter_light"
-        android:onClick="startNewActivity"
+        android:onClick="zavershit"
         android:text="@string/Завершить"
         android:textColor="#9CCD94"
         android:textSize="20sp" />
