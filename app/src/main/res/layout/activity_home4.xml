@@ -7,27 +7,44 @@
     android:background="@color/background"
     tools:context=".Home_4">
 
-    <Button
+    <ImageButton
         android:id="@+id/button"
-        android:layout_width="224dp"
+        android:layout_width="316dp"
         android:layout_height="100dp"
         android:layout_marginTop="112dp"
+        android:background="@drawable/new_shablon"
         android:onClick="startNewActivity"
-        android:text="Новый шаблон"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.443"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
+    <ImageButton
         android:id="@+id/button3"
-        android:layout_width="224dp"
+        android:layout_below="@+id/button"
+        android:layout_width="316dp"
         android:layout_height="100dp"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/pomodoro"
+        android:onClick="startNewActivity"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.443"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:layout_width="412dp"
+        android:layout_height="60dp"
+        android:background="#4E5C49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageButton
+        android:id="@+id/dots_button"
+        android:layout_width="16dp"
+        android:layout_height="60dp"
+        android:background="@drawable/dots"
+        tools:layout_editor_absoluteX="385dp"
+        app:layout_constraintEnd_toEndOf=""
+        app:layout_constraintTop_toTopOf="parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
