@@ -84,12 +84,12 @@
         android:layout_width="wrap_content"
         android:layout_height="33dp"
         android:layout_below="@+id/btn_Reset"
-        android:layout_marginTop="40dp"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/inter_light"
         android:onClick="startNewActivity"
         android:text="@string/Завершить"
-        android:textSize="20sp"
-        android:fontFamily="@font/inter_light"
-        android:textColor="#9CCD94"/>
+        android:textColor="#9CCD94"
+        android:textSize="20sp" />
 
 </RelativeLayout>
