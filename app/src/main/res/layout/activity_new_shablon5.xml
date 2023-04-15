@@ -6,22 +6,23 @@
     android:layout_height="match_parent"
     android:background="@color/background"
     tools:context=".NewShablon_5">
+
     <FrameLayout
         android:id="@+id/layout1"
         android:layout_width="411dp"
         android:layout_height="60dp"
-        android:background="#4E5C49"
+        android:background="@color/menu"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp"
-        tools:ignore="MissingConstraints">
-    </FrameLayout>
+        tools:layout_editor_absoluteY="0dp"></FrameLayout>
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/dialogMenu"
         android:layout_width="14dp"
         android:layout_height="50dp"
         android:background="@drawable/dots"
         android:scaleType="fitXY"
+        android:contentDescription="Меню"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.980"

@@ -2,10 +2,13 @@ package com.example.timelime;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+import android.widget.FrameLayout;
+import android.widget.ImageButton;
+
 
 public class Home_4 extends AppCompatActivity {
 
@@ -13,6 +16,36 @@ public class Home_4 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home4);
+
+
+        //нажимаем на кнопку и всплывает окно
+        ImageButton menu = (ImageButton) findViewById(R.id.dialogMenu);
+        menu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Dialog dialog = new Dialog(Home_4.this);
+                dialog.setContentView(R.layout.dialog_menu);
+
+
+            /*
+                //в диалоге нажимаем кнопку Выйти и Валя потом сделает выход из аккаунта))))
+                TextView vihod = (TextView) dialog.findViewById(R.id.vihod);
+                vihod.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+
+
+                        dialog.dismiss();
+                    }
+                });
+            */
+
+                dialog.show();
+
+            }
+        });
+
 
     }
 
