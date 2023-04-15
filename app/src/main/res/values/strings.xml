@@ -2,4 +2,5 @@
     <string name="app_name">TimeLime</string>
     <string name="Завершить"><u>Завершить</u></string>
     <string name="pomodoro">Помодоро</string>
+    <string name="shablon_name"></string>
 </resources>

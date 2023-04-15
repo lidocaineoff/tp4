@@ -7,41 +7,131 @@
     android:background="@color/background"
     tools:context=".Home_4">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="224dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="112dp"
-        android:onClick="newShablon"
-        android:text="Новый шаблон"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.443"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+<!--   <Button-->
+<!--        android:id="@+id/button"-->
+<!--        android:layout_width="224dp"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:layout_marginTop="112dp"-->
+<!--        android:background="@drawable/new_shablon"-->
+<!--        android:text="Новый шаблон"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.443"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="224dp"
+<!--    <Button-->
+<!--        android:id="@+id/button3"-->
+<!--        android:layout_width="224dp"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:text="@string/pomodoro"-->
+<!--        android:textSize="20sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.443"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.499" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/button4"-->
+<!--        android:layout_width="255dp"-->
+<!--        android:layout_height="83dp"-->
+<!--        android:layout_marginBottom="60dp"-->
+<!--        android:onClick="newTimer"-->
+<!--        android:text="Мы создали шаблон (время сохранено)"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.422"-->
+<!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+
+    <ImageButton
+        android:id="@+id/button_newshablon"
+        android:layout_width="314dp"
         android:layout_height="100dp"
-        android:onClick="Pomodoro"
-        android:text="@string/pomodoro"
-        android:textSize="20sp"
+        android:layout_below="@+id/layout1"
+        android:background="@drawable/new_shablon"
+        android:onClick="newShablon"
+        android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.443"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
+        app:layout_constraintVertical_bias="0.15"
+        tools:ignore="MissingConstraints" />
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="255dp"
-        android:layout_height="83dp"
-        android:layout_marginBottom="60dp"
+    <ImageButton
+        android:id="@+id/button_yourshablon"
+        android:layout_width="314dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/layout1"
+        android:background="@drawable/your_shablon"
         android:onClick="newTimer"
-        android:text="Мы создали шаблон (время сохранено)"
+        android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.422"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.443"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.40"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/button_pomodoro"
+        android:layout_width="314dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/layout1"
+        android:background="@drawable/pomodoro"
+        android:onClick="Pomodoro"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.443"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/button_devyatnatrid"
+        android:layout_width="314dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/layout1"
+        android:background="@drawable/devyatnatrid"
+        android:onClick="Devyatnatrid"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.443"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.90"
+        tools:ignore="MissingConstraints" />
+
+    <FrameLayout
+        android:id="@+id/layout1"
+        android:layout_width="411dp"
+        android:layout_height="60dp"
+        android:background="#4E5C49"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints">
+    </FrameLayout>
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="14dp"
+        android:layout_height="50dp"
+        android:background="@drawable/dots"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.980"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.006"
+        app:background="@drawable/dots"
+        tools:ignore="MissingConstraints" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

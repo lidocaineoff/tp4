@@ -16,7 +16,6 @@ public class Home_4 extends AppCompatActivity {
 
     }
 
-
     //переход в новое окно
     public void newShablon(View v){
         Intent intent = new Intent(this, NewShablon_5.class);
@@ -28,8 +27,17 @@ public class Home_4 extends AppCompatActivity {
     //переход в таймер помидора
     public void Pomodoro(View v){
         Intent intent = new Intent(this, Timer_6.class);
-        Global.startWork = 6000;
-        Global.relax = 10000;
+        Global.startWork = 1500000;
+        Global.relax = 300000;
+        Global.name = "Помодоро";
+        startActivity(intent);
+    }
+
+    public void Devyatnatrid(View v){
+        Intent intent = new Intent(this, Timer_6.class);
+        Global.startWork = 5400000;
+        Global.relax = 1800000;
+        Global.name = "Помодоро";
         startActivity(intent);
     }
 

@@ -14,4 +14,7 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="NumberPickerText">
+        <item name="android:textSize">15sp</item>
+    </style>
 </resources>
