@@ -12,7 +12,7 @@
         android:layout_width="224dp"
         android:layout_height="100dp"
         android:layout_marginTop="112dp"
-        android:onClick="startNewActivity"
+        android:onClick="newShablon"
         android:text="Новый шаблон"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.443"
@@ -32,4 +32,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.499" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="255dp"
+        android:layout_height="83dp"
+        android:layout_marginBottom="60dp"
+        android:onClick="newTimer"
+        android:text="Мы создали шаблон (время сохранено)"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.422"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

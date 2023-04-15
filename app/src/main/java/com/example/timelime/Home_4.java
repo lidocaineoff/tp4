@@ -18,8 +18,10 @@ public class Home_4 extends AppCompatActivity {
 
 
     //переход в новое окно
-    public void startNewActivity(View v){
+    public void newShablon(View v){
         Intent intent = new Intent(this, NewShablon_5.class);
+        Global.startWork = 0;
+        Global.relax = 0;
         startActivity(intent);
     }
 
@@ -28,6 +30,13 @@ public class Home_4 extends AppCompatActivity {
         Intent intent = new Intent(this, Timer_6.class);
         Global.startWork = 6000;
         Global.relax = 10000;
+        startActivity(intent);
+    }
+
+    public void newTimer(View v){
+        Intent intent = new Intent(this, Timer_6.class);
+        Global.startWork = Global.newTimeS;
+        Global.relax = Global.newTimeR;
         startActivity(intent);
     }
 }
