@@ -51,7 +51,7 @@ public class NewShablon_5 extends AppCompatActivity {
             @Override
             public void onValueChange(NumberPicker numberPicker, int i, int i1) {
                 long start = numberPickerStart.getValue();
-                Global.newTimeS = start*1000;
+                Global.newTimeS = start*1000*60;
             }
         });
 
@@ -61,7 +61,7 @@ public class NewShablon_5 extends AppCompatActivity {
             @Override
             public void onValueChange(NumberPicker numberPicker, int i, int i1) {
                 long relax = numberPickerRelax.getValue();
-                Global.newTimeR = relax*10000;
+                Global.newTimeR = relax*1000*60;
             }
         });
 
