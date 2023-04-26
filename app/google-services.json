@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "287696410949",
+    "project_id": "timelime-7f3bb",
+    "storage_bucket": "timelime-7f3bb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:287696410949:android:a0d472536622ec1550462c",
+        "android_client_info": {
+          "package_name": "com.example.timelime"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "287696410949-u9e0utf147ucpbqq0enssmk1070hdc8p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhhONB6fV9twG-Ip6YRW2DotUEz3cHvj4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "287696410949-u9e0utf147ucpbqq0enssmk1070hdc8p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

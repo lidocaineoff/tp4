@@ -13,14 +13,7 @@
         android:layout_height="315dp"
         android:layout_marginHorizontal="50dp"
         android:layout_marginTop="145dp"
-        app:srcCompat="@drawable/backtimer" />
-
-    <Chronometer
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/timer"
-        android:textColor="@color/background"
-        />
+        app:srcCompat="@drawable/backtimer1" />
 
     <TextView
         android:id="@+id/view_cnt"
