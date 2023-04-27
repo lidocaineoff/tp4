@@ -10,6 +10,8 @@ import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.ImageView;
+
 
 import java.util.Locale;
 
@@ -17,22 +19,29 @@ public class Timer_6 extends AppCompatActivity {
 
     private  TextView view_cnt;
     private Button btn_StartStop;
-    private  TextView nameTimer;
     private CountDownTimer mCountTimer;
     private boolean TimerRun;
     private long time = Global.startWork;
     int noTimer = 0;
+    private String name = Global.name;
     MediaPlayer player;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_timer6);
         view_cnt = findViewById(R.id.view_cnt);
-        nameTimer = findViewById(R.id.nameTimerText);
         btn_StartStop = findViewById(R.id.btn_Start_Stop);
         player = MediaPlayer.create(this, R.raw.timer_toster);
-
-        nameTimer.setText(Global.name);
+        ImageView img = (ImageView)findViewById(R.id.nameImage);
+        if (Global.name == "Помодоро"){
+            img.setImageResource(R.drawable.pomodoro_in_timer);
+        }
+        if (Global.name == "90/30"){
+            img.setImageResource(R.drawable.devyatnatrid_in_timer);
+        }
+        if (Global.name == "Ваш шаблон"){
+            img.setImageResource(R.drawable.your_shablon_in_timer);
+        }
         btn_StartStop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
