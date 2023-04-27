@@ -33,7 +33,7 @@ public class Home_4 extends AppCompatActivity {
                 dialog.getWindow().setGravity(Gravity.RIGHT | Gravity.TOP);
 
 
-            /*
+            /*      //тогда ждем доделанную кнопку, я потом ее помещу на страничку с новым шаблоном *настя*
                 //в диалоге нажимаем кнопку Выйти и Валя потом сделает выход из аккаунта))))
                 TextView vihod = (TextView) dialog.findViewById(R.id.vihod);
                 vihod.setOnClickListener(new View.OnClickListener() {

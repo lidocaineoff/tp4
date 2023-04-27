@@ -5,4 +5,13 @@
     <string name="shablon_name"></string>
     <string name="Выйти"><u>Выйти</u></string>
     <string name="Регистрация"><u>Регистрация</u></string>
+    <string name="Войти"><u>Войти</u></string>
+    <string name="Menu">Меню</string>
+    <string name="Make">Создать</string>
+    <string name="New_Shablon">Новый шаблон</string>
+    <string name="Time_for_work">Время для работы:</string>
+    <string name="Time_for_relax">Время для отдыха:</string>
+    <string name="email">Email</string>
+    <string name="password">Пароль</string>
+    <string name="Registration">Зарегистрироваться</string>
 </resources>
