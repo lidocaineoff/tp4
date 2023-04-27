@@ -13,7 +13,7 @@
         android:layout_height="315dp"
         android:layout_marginHorizontal="50dp"
         android:layout_marginTop="145dp"
-        app:srcCompat="@drawable/backtimer1" />
+        app:srcCompat="@drawable/backtimer" />
 
     <TextView
         android:id="@+id/view_cnt"
@@ -56,28 +56,14 @@
         android:textColor="#D6D6D6"
         android:textSize="30dp" />
 
-    <Button
-        android:id="@+id/btn_Reset"
-        style="@style/Widget.Material3.Button"
-        android:layout_width="136dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/btn_Start_Stop"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp"
-        android:backgroundTint="#99549A"
-        android:text="Сброс"
-        android:textColor="#D6D6D6"
-        android:fontFamily="@font/inter_bold"
-        android:textSize="25dp" />
-
     <TextView
         android:id="@+id/textView"
         style="@style/Widget.AppCompat.TextView"
         android:layout_width="wrap_content"
         android:layout_height="33dp"
-        android:layout_below="@+id/btn_Reset"
+        android:layout_below="@+id/btn_Start_Stop"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="59dp"
         android:fontFamily="@font/inter_light"
         android:onClick="zavershit"
         android:text="@string/Завершить"
