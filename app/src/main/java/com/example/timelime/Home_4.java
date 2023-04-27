@@ -75,7 +75,7 @@ public class Home_4 extends AppCompatActivity {
         Intent intent = new Intent(this, Timer_6.class);
         Global.startWork = 5400000;
         Global.relax = 1800000;
-        Global.name = "Помодоро";
+        Global.name = "90/30";
         startActivity(intent);
     }
 
@@ -83,6 +83,7 @@ public class Home_4 extends AppCompatActivity {
         Intent intent = new Intent(this, Timer_6.class);
         Global.startWork = Global.newTimeS;
         Global.relax = Global.newTimeR;
+        Global.name = "Ваш шаблон";
         startActivity(intent);
     }
 }

@@ -17,6 +17,7 @@ public class Timer_6 extends AppCompatActivity {
 
     private  TextView view_cnt;
     private Button btn_StartStop;
+    private  TextView nameTimer;
     private CountDownTimer mCountTimer;
     private boolean TimerRun;
     private long time = Global.startWork;
@@ -27,9 +28,11 @@ public class Timer_6 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_timer6);
         view_cnt = findViewById(R.id.view_cnt);
+        nameTimer = findViewById(R.id.nameTimerText);
         btn_StartStop = findViewById(R.id.btn_Start_Stop);
         player = MediaPlayer.create(this, R.raw.timer_toster);
 
+        nameTimer.setText(Global.name);
         btn_StartStop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -16,22 +16,6 @@
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp" />
 
-    <ImageButton
-        android:id="@+id/dialogMenu"
-        android:layout_width="10dp"
-        android:layout_height="50dp"
-        android:background="@drawable/dots"
-        android:scaleType="fitXY"
-        android:contentDescription="@string/Menu"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.940"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.006"
-        app:background="@drawable/dots"
-        tools:ignore="MissingConstraints" />
-
     <Button
         android:id="@+id/button2"
         style="@style/Widget.Material3.Button"
@@ -51,7 +35,7 @@
         app:layout_constraintVertical_bias="0.8"    />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/nameTimerText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
