@@ -1,27 +1,32 @@
-# Word Search
-Mobile Android word search game with Google Play Games integration. It creates a word search board randomly every time a new game is started and the user can either click or swipe the letters on the board to find words. It also keeps track of the best time of the user and they can change the number of words to find in the game in the Home screen. Furthermore, you can get some achievements in Google Play Games. This application is responsive and properly responds to orientation events.
+# TimeLime
+Мобильное приложение на Android по тайм-менеджменту для организации времени между работой и отдыхом. Оно имеет несколько встроенных шаблонов для работы, а также позволяет создавать собственный шаблон. Наше приложение имеет особые преимущества: когда заканчивается время для работы, вы услышите характерный звук; также таймер подсвечивается, когда находится в режиме работы.
 
-__Note:__ For now, to be able to sign in with Google Play Games, the account needs to be part of the tester list for the application. I would need to release the application on the Google Play store to get that feature out for everyone.
+__Примечание:__ Чтобы иметь возможность войти в приложение, необходимо иметь созданную учетную запись с существующей электронной почтой. При закрытии приложения вы снова окажетесь на экране авторизации.
 
-## Usage
-If you only want to try the application, there is a [.apk](WordSearch.apk) file in which you can run or if you want to modify the code, the code is in this repository.
+## Использование
+Если вы хотите попробовать приложение, установите файл [.apk](TimeLime.apk), который вы можете запустить, зарегистрироваться/авторизоваться, использовать уже существующие шаблоны или создать свой.
 
-## Screenshots
-Here are the screenshots of the application in both orientation
+## Скриншоты
+Здесь представлены скриншоты нашего приложения.
 
-### Portrait
+### Регистрация и Авторизация
 
-[![Home](./screenshots/shrinked/home_portrait.jpg)](./screenshots/home_portrait.jpg)
-[![Game](./screenshots/shrinked/game_portrait.jpg)](./screenshots/game_portrait.jpg)
-[![Finished](./screenshots/shrinked/game_finished_portrait.jpg)](./screenshots/game_finished_portrait.jpg)
-[![Achievements](./screenshots/shrinked/achievements_portrait.jpg)](./screenshots/achievements_portrait.jpg)
+[![Registration](./registration.jpg)](./registration.jpg)
+[![Authorization](./authorization.jpg)](./authorization.jpg)
 
-### Landscape
+### Главный экран
 
-[![Home](./screenshots/shrinked/home_landscape.jpg)](./screenshots/home_landscape.jpg)
-[![Game](./screenshots/shrinked/game_landscape.jpg)](./screenshots/game_landscape.jpg)
-[![Finished](./screenshots/shrinked/game_finished_landscape.jpg)](./screenshots/game_finished_landscape.jpg)
-[![Achievements](./screenshots/shrinked/achievements_landscape.jpg)](./screenshots/achievements_landscape.jpg)
+[![Mainscreen](./mainscreen.jpg)](./mainscreen.jpg)
+[![Dialog_menu](./mainscreen2.jpg)](./mainscreen2.jpg)
 
-## Mockups
-A quick mockup has been made with Adobe XD before creating the UI in the application. It can be found here https://xd.adobe.com/spec/2111ceb3-5bc2-4a57-6512-773c554c974f-5720/
+### Создание шаблона
+
+[![New_shablon](./newshablon.jpg)](./newshablon.jpg)
+
+### Работа таймера
+
+[![Your_shablon](./timer1.jpg)](./timer1.jpg)
+[![Pomodoro](./timer2.jpg)](./timer2.jpg)
+[![90/30](./timer3.jpg)](./timer3.jpg)
+
+# Приятного пользования!
