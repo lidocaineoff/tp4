@@ -45,7 +45,7 @@ public class Avtorizacia_2 extends AppCompatActivity {
                 if (email_login.getText().toString().isEmpty() || password_login.getText().toString().isEmpty()) {
                     Toast.makeText(Avtorizacia_2.this, "Заполните все пустые поля", Toast.LENGTH_SHORT).show();
                 } else {
-                    mAuth.signInWithEmailAndPassword(email_login.getText().toString(),password_login.getText().toString()).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                    mAuth.signInWithEmailAndPassword(email_login.getText().toString().trim(),password_login.getText().toString().trim()).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                         @Override                          public void onComplete(@NonNull Task<AuthResult> task) {
                             if(task.isSuccessful()){
                                 Intent intent= new Intent(Avtorizacia_2.this, Home_4.class);
