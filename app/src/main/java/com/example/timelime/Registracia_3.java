@@ -37,7 +37,7 @@ public class Registracia_3 extends AppCompatActivity {
                 if (email_registr.getText().toString().isEmpty() || password_registr.getText().toString().isEmpty()){
                     Toast.makeText(Registracia_3.this, "Заполните все пустые поля", Toast.LENGTH_SHORT).show();
                 }else {
-                    mAuth.createUserWithEmailAndPassword(email_registr.getText().toString(),password_registr.getText().toString()).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                    mAuth.createUserWithEmailAndPassword(email_registr.getText().toString().trim(),password_registr.getText().toString().trim()).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if(task.isSuccessful()){

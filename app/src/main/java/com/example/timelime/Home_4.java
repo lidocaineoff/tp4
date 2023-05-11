@@ -13,6 +13,9 @@ import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
 
 public class Home_4 extends AppCompatActivity {
 
@@ -21,9 +24,16 @@ public class Home_4 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home4);
 
+        //получаем email из FB
+        // Получаем email пользователя
+        FirebaseAuth mAuth = FirebaseAuth.getInstance();
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+        String email = currentUser.getEmail();
+
 
         //нажимаем на кнопку и всплывает окно
         ImageButton menu = (ImageButton) findViewById(R.id.dialogMenu);
+
         menu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -37,6 +47,9 @@ public class Home_4 extends AppCompatActivity {
                   // ?? тогда ждем доделанную кнопку, я потом ее помещу на страничку с новым шаблоном *настя*
 
                 TextView vihod = (TextView) dialog.findViewById(R.id.vihod);
+
+                TextView emailTV = (TextView) dialog.findViewById(R.id.textView6);
+                emailTV.setText(email);
                 vihod.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
