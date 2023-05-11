@@ -7,7 +7,7 @@
 
 
     <AbsoluteLayout
-        android:layout_width="270dp"
+        android:layout_width="210dp"
         android:layout_height="120dp"
         android:background="@drawable/drawablenp2"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -22,7 +22,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|center"
-            android:layout_x="110dp"
+            android:layout_x="20dp"
             android:layout_y="75dp"
             android:text="@string/Выйти"
             android:fontFamily="@font/inter_regular"
@@ -36,10 +36,9 @@
             android:layout_x="20dp"
             android:layout_y="20dp"
             android:fontFamily="@font/inter_regular"
-            android:text=""
+            android:text="mymouse53"
             android:textColor="#FBFBFB"
             android:textSize="20sp" />
-
     </AbsoluteLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -47,7 +47,8 @@ public class Home_4 extends AppCompatActivity {
                 TextView vihod = (TextView) dialog.findViewById(R.id.vihod);
 
                 TextView emailTV = (TextView) dialog.findViewById(R.id.textView8);
-                emailTV.setText(email);
+                String s= email.substring(0, email.indexOf("@"));
+                emailTV.setText(s);
                 vihod.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
