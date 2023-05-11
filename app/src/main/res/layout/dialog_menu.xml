@@ -33,10 +33,10 @@
             android:id="@+id/textView8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_x="40dp"
+            android:layout_x="20dp"
             android:layout_y="20dp"
             android:fontFamily="@font/inter_regular"
-            android:text="email@timelime.com"
+            android:text=""
             android:textColor="#FBFBFB"
             android:textSize="20sp" />
 

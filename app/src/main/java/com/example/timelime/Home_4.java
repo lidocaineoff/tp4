@@ -44,11 +44,9 @@ public class Home_4 extends AppCompatActivity {
                 dialog.getWindow().setGravity(Gravity.RIGHT | Gravity.TOP);
 
 
-                  // ?? тогда ждем доделанную кнопку, я потом ее помещу на страничку с новым шаблоном *настя*
-
                 TextView vihod = (TextView) dialog.findViewById(R.id.vihod);
 
-                TextView emailTV = (TextView) dialog.findViewById(R.id.textView6);
+                TextView emailTV = (TextView) dialog.findViewById(R.id.textView8);
                 emailTV.setText(email);
                 vihod.setOnClickListener(new View.OnClickListener() {
                     @Override
