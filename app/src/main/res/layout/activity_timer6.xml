@@ -9,12 +9,12 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="330dp"
-        android:layout_height="315dp"
+        android:layout_width="395dp"
+        android:layout_height="395dp"
+        android:layout_centerHorizontal="true"
         android:layout_below="@+id/nameImage"
-        android:layout_marginTop="-30dp"
-        android:layout_marginHorizontal="50dp"
-        app:srcCompat="@drawable/backtimer" />
+        android:layout_marginTop="-50dp"
+        />
 
     <TextView
         android:id="@+id/view_cnt"
@@ -22,18 +22,18 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/nameImage"
-        android:layout_marginTop="95dp"
+        android:layout_marginTop="105dp"
         android:layout_marginEnd="144dp"
         android:fontFamily="@font/inter_bold"
         android:text="00:00"
         android:textColor="#54AD17"
-        android:textSize="50dp" />
+        android:textSize="55dp"/>
 
     <ImageView
         android:id="@+id/nameImage"
         android:layout_width="390dp"
         android:layout_height="123dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="65dp"
         android:layout_centerHorizontal="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -47,7 +47,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/imageView"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="-10dp"
         android:backgroundTint="@color/button"
         android:fontFamily="@font/inter_bold"
         android:text="Запуск"
@@ -61,7 +61,7 @@
         android:layout_height="33dp"
         android:layout_below="@+id/btn_Start_Stop"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="59dp"
+        android:layout_marginTop="40dp"
         android:fontFamily="@font/inter_light"
         android:onClick="zavershit"
         android:text="@string/Завершить"

@@ -33,6 +33,8 @@ public class Timer_6 extends AppCompatActivity {
         btn_StartStop = findViewById(R.id.btn_Start_Stop);
         player = MediaPlayer.create(this, R.raw.timer_toster);
         ImageView img = (ImageView)findViewById(R.id.nameImage);
+        ImageView img2 = (ImageView)findViewById(R.id.imageView);
+        img2.setImageResource(R.drawable.backtimer2);
         if (Global.name == "Помодоро"){
             img.setImageResource(R.drawable.pomodoro_in_timer);
         }
@@ -47,8 +49,10 @@ public class Timer_6 extends AppCompatActivity {
             public void onClick(View view) {
                 if (TimerRun) {
                     pauseTimer();
+                    img2.setImageResource(R.drawable.backtimer2);
                 } else {
                     firstTimer();
+                    img2.setImageResource(R.drawable.backtimer3);
                 }
             }
         });

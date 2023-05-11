@@ -123,19 +123,25 @@
         tools:ignore="MissingConstraints">
     </FrameLayout>
 
+    <ImageView
+        android:id="@+id/imageTimeLime"
+        android:layout_width="146dp"
+        android:layout_height="60dp"
+        android:src="@drawable/logoname">
+    </ImageView>
     <ImageButton
         android:id="@+id/dialogMenu"
-        android:layout_width="10dp"
+        android:layout_width="12dp"
         android:layout_height="50dp"
         android:background="@drawable/dots"
         android:scaleType="fitXY"
         android:contentDescription="Меню"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.940"
+        app:layout_constraintHorizontal_bias="0.950"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.006"
+        app:layout_constraintVertical_bias="0.007"
         app:background="@drawable/dots"
         tools:ignore="MissingConstraints" />
 
