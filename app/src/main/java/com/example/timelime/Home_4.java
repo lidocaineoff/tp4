@@ -11,6 +11,7 @@ import android.view.Gravity;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 
 public class Home_4 extends AppCompatActivity {
@@ -33,18 +34,18 @@ public class Home_4 extends AppCompatActivity {
                 dialog.getWindow().setGravity(Gravity.RIGHT | Gravity.TOP);
 
 
-            /*      //тогда ждем доделанную кнопку, я потом ее помещу на страничку с новым шаблоном *настя*
-                //в диалоге нажимаем кнопку Выйти и Валя потом сделает выход из аккаунта))))
+                  // ?? тогда ждем доделанную кнопку, я потом ее помещу на страничку с новым шаблоном *настя*
+
                 TextView vihod = (TextView) dialog.findViewById(R.id.vihod);
                 vihod.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-
-
-                        dialog.dismiss();
+                        Intent intent = new Intent(Home_4.this, Avtorizacia_2.class);
+                        startActivity(intent);
+                       // dialog.dismiss();
                     }
                 });
-            */
+
 
                 dialog.show();
 
